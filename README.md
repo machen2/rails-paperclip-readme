@@ -201,7 +201,7 @@ And just like that, Paperclip will process the image and create a thumbnail styl
 #...
   <% @authors.each do |author| %>
     <li>
-    <% image_tag author.avatar.url(:thumb) %>
+    <%= image_tag author.avatar.url(:thumb) %>
     <%= link_to author.name, author_path(author) %><br>
     <%= author.bio %>
     </li>
@@ -220,4 +220,4 @@ In the terminal, run `rake paperclip:refresh:missing_styles`, then refresh that 
 
 We've seen how easy it is to upload image attachments, have default avatars, and create thumbnails in our application with very little code thanks to the Paperclip gem.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-paperclip-readme' title='Uploading Images with Paperclip'>Uploading Images with Paperclip</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/rails-paperclip-readme'>Paperclip</a> on Learn.co and start learning to code for free.</p>
